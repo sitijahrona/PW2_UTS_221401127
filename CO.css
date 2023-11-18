@@ -64,4 +64,48 @@ body {
     .customer-form {
         width: 100%;
     }
+    /* Pengaturan kontainer secara umum */
+.container {
+    text-align: center;
+    margin: 30px;
+}
+
+/* Pengaturan halaman pemesanan */
+.order-page {
+    display: none; /* Awalnya disembunyikan */
+}
+
+/* Pengaturan item menu */
+.menu-item {
+    display: flex;
+    margin: 30px;
+    border: 1px solid #ebae9d;
+    padding: 10px;
+}
+
+.menu-item img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.info {
+    flex: 1;
+}
+
+/* Pengaturan keranjang belanja */
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: #ebae9d;
+    border: 1px solid #ddd;
+}
+
+/* ... (CSS yang ada sebelumnya) ... */
+
+/* Styling untuk tampilan desktop dan tablet */
+.customer-info div {
+    margin-bottom: 15px;
+}
 }

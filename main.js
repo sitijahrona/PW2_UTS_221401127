@@ -19,3 +19,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+ // Script untuk efek scroll halus
+ $(document).ready(function () {
+    // Tambahkan class "smooth-scroll" pada setiap tautan yang ingin memiliki efek scroll halus
+    $("a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        // Menggunakan jQuery animate untuk menambahkan efek scroll
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 130, function () {
+          // Menambahkan hash (#) ke URL setelah scroll
+          window.location.hash = hash;
+        });
+      }
+    });
+  });

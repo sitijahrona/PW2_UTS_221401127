@@ -298,12 +298,17 @@ img{
 
 /* Add your additional responsive styles here */
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     /* Navbar */
     .navbar-brand img {
       width: 30px; 
       height: 30px; 
-  
+
+      .navbar-nav {
+        text-align: right;
+        margin-top: 10px;
+        width: 100%; /* Make the navbar full width */
+    }
     .navbar a {
       font-size: 14px; 
     }
@@ -377,7 +382,7 @@ img{
     }
 
     .navbar-nav {
-        text-align: center;
+        text-align: right;
         margin-top: 10px;
         width: 100%; /* Make the navbar full width */
     }
@@ -434,22 +439,22 @@ img{
     }
 
     .navbar-toggler {
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     .navbar-nav {
-        text-align: center;
-        margin-top: 10px;
+        text-align: right;
+        margin-top: 5px;
         width: 100%; /* Make the navbar full width */
     }
 
     .navbar-nav li {
         display: block;
-        margin-bottom: 10px; /* Adjust as needed */
+        margin-bottom: 5px; /* Adjust as needed */
     }
 
     .bx-menu {
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
     .Home {
         margin-top: 72px; /* Sesuaikan tinggi Navbar dengan tinggi yang sesuai */
