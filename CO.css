@@ -1,0 +1,67 @@
+/* font google */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset margin dan padding pada body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Pengaturan kontainer secara umum */
+.container {
+    text-align: center;
+    margin: 50px;
+}
+
+/* Pengaturan halaman pemesanan */
+.order-page {
+    display: none; /* Awalnya disembunyikan */
+}
+
+/* Pengaturan item menu */
+.menu-item {
+    display: flex;
+    margin: 50px;
+    border: 1px solid #ebae9d;
+    padding: 30px;
+}
+
+.menu-item img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.info {
+    flex: 1;
+}
+
+/* Pengaturan keranjang belanja */
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #ebae9d;
+    border: 1px solid #ddd;
+}
+
+/* ... (CSS yang ada sebelumnya) ... */
+
+/* Styling untuk tampilan desktop dan tablet */
+.customer-info div {
+    margin-bottom: 15px;
+}
+
+/* Styling untuk tampilan smartphone */
+@media (max-width: 767px) {
+    .customer-info div {
+        margin-bottom: 20px;
+    }
+
+    /* Atur ulang lebar formulir pelanggan untuk memastikan tidak tertutup oleh keranjang belanja */
+    .customer-form {
+        width: 100%;
+    }
+}

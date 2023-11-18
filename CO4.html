@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering</title>
+    <!-- Menghubungkan ke stylesheet eksternal untuk styling (CO.css) -->
+    <link rel="stylesheet" href="CO.css">
+</head>
+<body>
+
+<!-- Kontainer utama -->
+<div id="orderPage" class="order-page">
+    <!-- Wadah untuk formulir pelanggan -->
+    <div class="customer-form">
+        <!-- Formulir untuk informasi pelanggan (nama, alamat, dan no hp) -->
+        <div class="customer-info">
+            <!-- Label dan input untuk nama -->
+            <div>
+                <label for="customerName">Name:</label>
+                <input type="text" id="customerName" placeholder="Your Name">
+            </div>
+
+            <!-- Label dan textarea untuk alamat -->
+            <div>
+                <label for="customerAddress">Address:</label>
+                <textarea id="customerAddress" placeholder="Your Address"></textarea>
+            </div>
+
+            <!-- Label dan input untuk no hp -->
+            <div>
+                <label for="customerPhone">Phone Number:</label>
+                <input type="tel" id="customerPhone" placeholder="Your Phone Number">
+            </div>
+        </div>
+    </div>
+
+        <!-- Bagian menu item -->
+        <div class="menu-item">
+            <!-- Gambar yang mewakili menu item -->
+            <img src="/img/Shop4.png" alt="Strawberry Oreo">
+            <div class="info">
+                <h2>Strawberry Oreo</h2>
+                <p>Price: Rp. 15.000</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <!-- Tombol untuk menambahkan item ke keranjang belanja -->
+                <button onclick="addToCart('Strawberry Oreo', 15.000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Bagian Keranjang Belanja -->
+        <div id="cart" class="cart">
+            <h2>Shopping Cart</h2>
+            <!-- Daftar item di keranjang -->
+            <ul id="cartItems"></ul>
+            <!-- Total harga pesanan -->
+            <p>Total: <span id="totalPrice">0</span></p>
+            <!-- Pilihan Metode Pembayaran -->
+            <div class="payment-method">
+                <label for="paymentMethod">Choose Payment Method:</label>
+                <select id="paymentMethod">
+                    <option value="COD">Cash on Delivery (COD)</option>
+                    <option value="BankTransfer">Bank Transfer</option>
+                </select>
+            </div>
+            <!-- Tombol Checkout -->
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <!-- file js -->
+    <script src="CO.js"></script>
+</body>
+</html>

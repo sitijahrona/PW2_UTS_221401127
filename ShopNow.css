@@ -1,0 +1,96 @@
+/* Warna font dan latar belakang */
+:root {
+    --main-color: #007e84;    /* Warna utama */
+    --second-color: #04111c;  /* Warna sekunder */
+}
+
+/* Posisi heading untuk section Shop */
+.heading span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--second-color);  /* Menggunakan warna sekunder */
+}
+
+.heading h1 {
+    font-size: 2rem;
+    color: var(--main-color);    /* Menggunakan warna utama */
+}
+
+/* CSS untuk grid */
+.Shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.Shop-container .box {
+    flex: 1 1 10rem;
+    background: var(--main-color);  /* Menggunakan warna utama sebagai latar belakang */
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+
+.Shop-container .box .box-img {
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+}
+
+.Shop-container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* CSS untuk ikon bintang */
+.stars {
+    margin: 1rem 0 0.1rem;
+}
+
+.Shop-container .box .stars .bx {
+    color: #ebae9d;   /* Warna untuk ikon bintang */
+}
+
+.Shop-container .box h2 {
+    color: #ebae9d;   /* Warna untuk judul */
+    font-size: 1.2rem;
+}
+
+.Shop-container .box span {
+    color: #ebae9d;   /* Warna untuk teks tambahan */
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0.1rem 0 0.4rem;
+}
+
+.box .btn {
+    border: 2px solid #ebae9d;
+    color: #ebae9d;
+}
+
+.box .btn:hover {
+    background: #ebae9d;
+    color: var(--second-color);  /* Menggunakan warna sekunder saat tombol dihover */
+}
+
+/* ShopNow.css */
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+}
+
+/* Responsif untuk smartphone */
+@media (max-width: 480px) {
+    .box {
+        width: 100%;
+    }
+}

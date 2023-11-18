@@ -1,0 +1,59 @@
+/* font google */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset margin dan padding pada body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya untuk bagian "About" */
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 90px;
+    background-color: #ebae9d;
+}
+
+
+/* Gaya untuk kolom-kolom di dalam "About" */
+.left-column,
+.right-column {
+    flex: 1;
+}
+.left-column {
+    margin-right: 40px; /* Menambahkan margin ke kanan untuk menggeser foto ke kanan */
+}
+/* Gaya untuk gambar */
+img {
+    max-width: 80%;
+    height: 10; /* Perlu diperbaiki menjadi height: 10px; untuk memberikan tinggi yang valid */
+    border-radius: 7px;
+}
+
+/* Gaya untuk judul dan teks */
+h2 {
+    color: #04111c;
+}
+h1 {
+    color: #007e84;
+}
+
+p {
+    color: #04111c;
+}
+
+/* Media queries untuk menyesuaikan tata letak pada layar kecil */
+@media screen and (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column,
+    .right-column {
+        margin: 10px 0;
+    }
+}
